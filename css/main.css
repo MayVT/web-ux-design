@@ -1,0 +1,112 @@
+/*colores:
+color verdoso fondo_ #dde8e6
+color negro fuente_ #292A2C
+color blanco fondo_ #FFFFFF
+color negro hover: #4E5155
+
+tipografías:
+principal_ openSans
+titulos_ heebo
+ */
+
+/*Importaciones y variables*/
+
+@font-face {
+    font-family: "Heebo";
+    src: url("../fonts/Heebo-Regular.woff2") format("woff2");
+    font-display: fallback;
+
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url("../fonts/Heebo-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+    font-display: fallback;
+}
+
+
+/*Etiquetas globales*/
+body {
+    margin: 0;
+    font-family: "OpenSans";
+    color: #292A2C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Heebo";
+}
+
+/*clases globales*/
+
+.container {
+    max-width: 40rem;
+    padding: 1rem;
+    margin:0 auto;
+}
+
+.alert {
+    background-color: #dde8e6;
+    font-size: 1.2rem;
+    padding: .2rem 0;
+    margin: 2rem 0;
+}
+
+.alert__text {
+    padding: 0;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.link {
+    color: #292A2C;
+    text-decoration-thickness: 2px;
+}
+
+.link:hover {
+    color: #4E5155;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #292A2C;
+    border-radius: 3rem;
+    color: #292A2C;
+    text-decoration: none;
+    text-align: center;
+    padding: .8rem 1.5rem;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: #292A2C;
+    color: white;
+}
+
+/*clases directas*/
+
+.info {
+    max-width: 22rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.info__title {
+    font-size: 3rem;
+}
+
+.info__text {
+    line-height: 1.7rem;
+}
+
+.info__button {
+    margin: 3rem 0;
+}
